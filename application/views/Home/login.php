@@ -9,25 +9,27 @@
   <body>
     <nav style="height:100%;">
        <div class="nav-wrapper">
-         <div class="row">
-           <div class="col xl2">
-             <a href="#" class="brand-logo" style="padding-left: 4%;"><img src="<?php echo base_url();?>application/helpers/icons/login/upetlogoblanco.png" alt=""></a>
-           </div>
-           <div class="col xl8 offset-xl2">
-             <div class="row">
-               <div class="col xl3 offset-xl3">
-                 <input class="border" placeholder="Correo electronico" type="text" name="" value="" style="border-radius: 10px; background-color: white;color:gray">
-               </div>
-               <div class="col xl2">
-                 <input class="border" placeholder="Contraseña" type="text" name="" value="" style="border-radius: 10px; background-color: white;color:gray">
-                 <a class="password" href="#">¿Olvidaste tu contraseña?</a>
-               </div>
-               <div class="col xl4">
-                 <a class="waves-effect waves-light btn green_black" style="border-radius: 10px;">Iniciar sesión</a>
+         <form class="" action="<?php echo base_url();?>Home/inicio" method="post">
+           <div class="row">
+             <div class="col xl2">
+               <a href="#" class="brand-logo" style="padding-left: 4%;"><img src="<?php echo base_url();?>application/helpers/icons/login/upetlogoblanco.png" alt=""></a>
+             </div>
+             <div class="col xl8 offset-xl2">
+               <div class="row">
+                 <div class="col xl3 offset-xl3">
+                   <input class="border" placeholder="Correo electronico" type="text" name="" value="" style="border-radius: 10px; background-color: white;color:gray">
+                 </div>
+                 <div class="col xl2">
+                   <input class="border" placeholder="Contraseña" type="text" name="" value="" style="border-radius: 10px; background-color: white;color:gray">
+                   <a class="password" href="#">¿Olvidaste tu contraseña?</a>
+                 </div>
+                 <div class="col xl4">
+                   <button class="waves-effect waves-light btn green_black" type="submit" name="button" style="border-radius: 10px;">Iniciar sesión</button>
+                 </div>
                </div>
              </div>
            </div>
-         </div>
+         </form>
        </div>
      </nav>
 

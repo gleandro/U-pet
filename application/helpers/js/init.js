@@ -1,7 +1,16 @@
-(function($){
-  $(function(){
 
-    $('.button-collapse').sideNav();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+
+$(document).ready(function () {
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+});
+
+$("#icon_prefix").click(function() {
+  $("#inicio_publicar").fadeIn("slow");
+});
+$("#publicacion").mouseleave(function() {
+  $("#inicio_publicar").hide("slow");
+  $("#icon_prefix").blur();
+});

@@ -8,4 +8,9 @@ class Home extends CI_Controller{
     $this->load->view('Home/login');
   }
 
+  function inicio()
+  {
+    $this->load->view('Home/index');
+  }
+
 }

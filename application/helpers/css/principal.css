@@ -1,0 +1,39 @@
+.white{
+  background-color: white;
+}
+
+.green_black{
+	background-color: #75893E;
+}
+
+.bord_green{
+  border-style: ridge;
+  border-width: thin;
+  border-color: green;
+}
+.center_row{
+  display: flex;
+  justify-content: center;
+}
+
+.drop_drop{
+  min-width: 30%;
+}
+
+.space_0{
+  line-height: 20px;
+}
+.row_0{
+  margin-bottom: 0;
+}
+
+.h_100{
+  height: 100px;
+}
+.row_perfect{
+  border-top: ridge;
+  border-bottom: ridge;
+  border-color: gray;
+  border-width: thin;
+  margin-bottom: 0;
+}
