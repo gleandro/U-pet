@@ -4806,8 +4806,8 @@ small {
 .card .card-image .card-title {
   color: #fff;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 5%;
+  left: 23%;
   max-width: 100%;
   padding: 24px;
 }
@@ -5182,11 +5182,11 @@ small {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  width: 20%;
+  height: 50%;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: transparent;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
@@ -5194,7 +5194,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: transparent;
 }
 
 .btn-floating:before {
@@ -5217,7 +5217,7 @@ small {
 .btn-floating.halfway-fab {
   position: absolute;
   right: 24px;
-  bottom: -20px;
+  bottom: -50px;
 }
 
 .btn-floating.halfway-fab.left {
@@ -7213,7 +7213,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav li > a.btn-floating:hover {
-  background-color: #26a69a;
+  background-color: transparent;
 }
 
 .side-nav li > a > i,
