@@ -8,39 +8,35 @@ class Usuario extends CI_Controller {
 		$this->load->model(array('Usuario_Model'));
 	}
 
-	public function index()
-	{
-	
-	}
-
 	public function validar_usuario()
 	{
 		$result['status']=0;
 
-	    $correo = $this->input->get_post('correo');
-	  	$pass = $this->input->get_post('pass');
+		$email = $this->input->get_post('correo');
+		$pass = $this->input->get_post('pass');
 
-	  	$usuario = $this->Usuario_Model->valida_usuario($correo,$pass);
+		$usuario = $this->Usuario_Model->valida_usuario($email,$pass);
 
-	    if (!empty($usuario)) {
-	    	$_SESSION['SES_usuario'] = $usuario;
-				$result['status']=1;
-	    }
+		if (!empty($usuario)) {
+			$_SESSION['SES_usuario'] = $usuario;
+			$_SESSION['SES_usuario']['first_time'] = true;
+			$result['status']=1;
+		}
 
-    	echo json_encode($result);
+		echo json_encode($result);
 	}
 
 	public function CerrarSession()
-  	{
-		if (!empty($_SESSION['SES_usuario'])) 
+	{
+		if (!empty($_SESSION['SES_usuario']))
 		{
 			session_destroy();
 		}
-      	Redirect("");
-  	}
+		Redirect("");
+	}
 
-  	public function registro_usuario()
-  	{
+	public function registro_usuario()
+	{
 		$result['status']=0;
 
 		$correo = trim($this->input->get_post('correo'));

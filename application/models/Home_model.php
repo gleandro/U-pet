@@ -1,15 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-if(!isset($_SESSION)) { 
-		session_start(); 
-} 
+if(!isset($_SESSION)) {
+		session_start();
+}
 
 class Home_model extends CI_Model {
 
 	public function __construct()
 	{
 		parent::__construct();
-		
+
 	}
 
 	function cargar_publicacion($id){

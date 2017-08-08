@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-if(!isset($_SESSION)) { 
-    session_start(); 
-} 
+if(!isset($_SESSION)) {
+  session_start();
+}
 
 class Usuario_Model extends CI_Model{
 
@@ -13,11 +13,21 @@ class Usuario_Model extends CI_Model{
     //Codeigniter : Write Less Do More
   }
 
-  function valida_usuario($correo,$contrasena){
-
-    $sql = "select * from login where correo='$correo' and contrasena='$contrasena'";
+  function obtener_correo($id){
+    $sql = "select l.correo from usuario u join login l on u.id_login=l.id_login where u.id_usuario=$id";
     $consulta = $this->db->query($sql);
+    return $consulta->result_array();
+  }
 
+  function cargar_datos($id){
+    $sql = "select * from usuario where id_usuario=$id";
+    $consulta = $this->db->query($sql);
+    return $consulta->result_array();
+  }
+
+  function valida_usuario($email,$contrasena){
+    $sql = "select u.* from login l join usuario u on l.id_login=u.id_login where l.correo='$email' and l.contrasena='$contrasena'";
+    $consulta = $this->db->query($sql);
     return $consulta->result_array();
   }
 
