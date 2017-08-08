@@ -1,8 +1,23 @@
-<ul id="others" class="dropdown-content">
+<div class="preloader-background">
+  <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<ul id="others" class="dropdown-content drop_others bord_green">
   <li><a href="#!">oane</a></li>
   <li><a href="#!">two</a></li>
   <li class="divider"></li>
-  <li><a href="#!">three</a></li>
+  <li><a href="<?php echo base_url(); ?>Usuario/CerrarSession">Cerrar session</a></li>
 </ul>
 <ul id="notification" class="dropdown-content drop_drop bord_green black-text">
     <div class="row row_0">
@@ -90,7 +105,7 @@
   <div class="nav-wrapper">
       <div class="row h_100" style="margin-bottom: 0;">
         <div class="col xl2 h_100">
-          <a href="#" class="brand-logo" style="padding-left: 4%;"><img src="<?php echo base_url();?>application/helpers/icons/login/upetlogoblanco.png" alt="" style="width:70%"></a>
+          <a href="<?php echo base_url(); ?>" class="brand-logo" style="padding-left: 4%;"><img src="<?php echo base_url();?>application/helpers/icons/login/upetlogoblanco.png" alt="" style="width:70%"></a>
         </div>
         <div class="col xl10 h_100" style="padding-top:20px">
           <div class="row">
@@ -103,12 +118,14 @@
             </div>
             <div class="col xl2 offset-xl1">
               <div class="row">
-                <div class="col xl4">
-                  <img src="<?php echo base_url();?>application/helpers/icons/inicio/header/perfil.png" alt="">
-                </div>
-                <div class="col xl8">
-                  <span>Ryan Sheckler</span>s
-                </div>
+                <a href="<?php echo base_url(); ?>Profile">
+                  <div class="col xl4">
+                    <img src="<?php echo base_url();?>application/helpers/icons/inicio/header/perfil.png" alt="">
+                  </div>
+                  <div class="col xl8">
+                    <span><?php echo $usuario["nombre"]; ?></span>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col xl3">
@@ -117,7 +134,9 @@
                   <img style="padding-top:12px" src="<?php echo base_url();?>application/helpers/icons/inicio/lineavertical.png" alt="">
                 </div>
                 <div class="col xl2">
+                <a href="<?php echo base_url(); ?>">
                   <span>Inicio</span>
+                </a>
                 </div>
                 <div class="col xl2">
                   <a class="dropdown-button" href="#!" data-activates="add"><img src="<?php echo base_url();?>application/helpers/icons/inicio/header/nuevoamigoicon.png" alt=""></a>

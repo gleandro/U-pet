@@ -1,250 +1,560 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<!-- Mirrored from demos.bootdey.com/dayday/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2017 15:44:05 GMT -->
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Inicio</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>application/helpers/css/materialize.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>application/helpers/css/principal.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="<?php echo base_url(); ?>application/helpers/img/favicon.png">
+    <title>Day-Day</title>
+    <!-- Bootstrap core CSS -->
+    <link href="<?php echo base_url(); ?>application/helpers/bootstrap.3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/font-awesome.4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/assets/css/animate.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/assets/css/timeline.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/assets/css/cover.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/assets/css/forms.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>application/helpers/assets/css/buttons.css" rel="stylesheet">
+    <script src="<?php echo base_url(); ?>application/helpers/assets/js/jquery.1.11.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>application/helpers/bootstrap.3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body class="orange lighten-4">
 
-    <?php $this->load->view('Inicio/header'); ?>
+  <body class="animated fadeIn">
 
-     <div class="container" style="margin-top:3%;">
-       <div class="row">
-         <div class="col xl3">
-           <div class="row" style="min-height: 50px;">
-             <a href="#">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/perfil.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>Ryan Sheckler</span>
-               </div>
-             </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="<?php echo base_url()?>Message">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/noticiasicon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>Noticias</span>
-               </div>
-             </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="<?php echo base_url()?>Message">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/chaticon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>UpetChat</span>
-               </div>
-             </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="#">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/eventosicon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>UpetEventos</span>
-               </div>
-             </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="#">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/grupetsicon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>Grupets</span>
-               </div>
-            </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="#">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/tiendasicon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>PetTiendas</span>
-               </div>
-              </a>
-           </div>
-           <div class="row" style="min-height: 50px;">
-             <a href="#">
-               <div class="col xl2">
-                 <img src="<?php echo base_url();?>application/helpers/icons/inicio/first/guardaricon.png" alt="">
-               </div>
-               <div class="col xl9 offset-xl1 black-text" style="padding-top:10px;">
-                 <span>Guardado</span>
-               </div>
-             </a>
-           </div>
-         </div>
-         <div class="col xl6" style="padding-right: 30px;">
-           <div class="row bord_green white">
-             <div class="col xl12">
-               <div class="row bord_green light-green lighten-4">
-                 <div class="col xl12 valign-wrapper">
-                   <img class="palote_space" src="<?php echo base_url();?>application/helpers/icons/inicio/second/editar.png" alt="">
-                   <span id="texto" class="green_black_text">Crear una publicación</span>
-                   <img class="palote_space" src="<?php echo base_url();?>application/helpers/icons/inicio/lineavertical.png" alt="">
-                   <img class="palote_space" src="<?php echo base_url();?>application/helpers/icons/inicio/second/foto.png" alt="">
-                   <a href="#"><span id="album" class="green_black_text">Álbum de foto o video</span></a>
-                 </div>
-               </div>
-               <div class="row row_0">
-                 <div class="input-field col xl11">
-                  <i class="material-icons prefix"><img src="<?php echo base_url();?>application/helpers/icons/inicio/tree/perfil.png" alt=""></i>
-                  <input id="icon_prefix" type="text" class="validate" style="margin-left: 4rem;">
-                  <label for="icon_prefix" style="margin-left: 4rem;">Escribe tu publicación aqui...</label>
-                </div>
-               </div>
-               <div class="row row_0" id="inicio_publicar" style="display:none">
-                 <div class="input-field col xl5 right-align" style="padding-left: 7%;">
-                   <select class="icons">
-                     <option value="" class="circle">Público</option>
-                     <option value="" class="circle">Mis amigos</option>
-                     <option value="" class="circle">Solo yo</option>
-                   </select>
-                 </div>
-                 <div class="input-field col xl6 right-align">
-                    <button class="waves-effect waves-light btn green_black" id="publicar" type="submit" name="button" style="border-radius: 10px;">Publicar</button>
-                  </div>
-               </div>
-               <div class="row row_0" id="imagen" style="display:none">
-                <form action="#" id="form1" runat="server">
-                 <div class="col xl8">
-                    <div class="file-field input-field">
-                      <div class="btn">
-                        <span>File</span>
-                        <input type="file" id="imgInp">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col xl4">
-                    <img id="blah" class="materialboxed" style="padding-bottom:5%;border-radius: 10px;" width="100%" src="" alt="" />
-                  </div>
-                 </form>
-               </div>
-             </div>
-           </div>
-           <div class="row bord_green white">
-             <div class="col xl12">
-               <div class="row">
-                 <div class="col xl12">
-                   <img src="<?php echo base_url();?>application/helpers/icons/inicio/second/perfil.png" alt="">
-                   <span>Ryan Sheckler Skate</span>
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="col xl12">
-                   <img class="materialboxed" data-caption="#galletas #galletas #galletas" src="<?php echo base_url();?>application/helpers/images/inicio/publicacion.png" alt="" style="width: 100%;">
-                 </div>
-               </div>
-               <div class="row center_row">
-                 <div class="col xl3">
-                   <span>30123</span>
-                   <img src="<?php echo base_url();?>application/helpers/images/inicio/like.png" alt="">
-                 </div>
-                 <div class="col xl3">
-                   <span>440123</span>
-                   <img src="<?php echo base_url();?>application/helpers/images/inicio/coment.png" alt="">
-                 </div>
-                 <div class="col xl3">
-                   <span>4123</span>
-                   <img src="<?php echo base_url();?>application/helpers/images/inicio/share.png" alt="">
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="col xl12">
-                   <span style="font-weight:bold">Ryan</span><span> Sheckler Skate</span>
-                   <span> Acaba de comer una galleta</span><br>
-                   <span>#galletas</span><span>#galletas</span><span>#galletas</span>
-                 </div>
-               </div>
-               <div class="row">
-                 <div class="col xl12">
-                   <span>22hr</span>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="col xl3 " style="text-align:-webkit-center;">
-           <div class="row bord_green white">
-             <div class="col x12">
-               <div class="row">
-                 <div class="col x12">
-                   <span>Grupets sugeridos</span>
-                 </div>
-               </div>
-               <div class="row bord_green" style="width: 99%;">
-                 <div class="">
-                   <div class="col x12" style="padding: 0;">
-                     <img src="<?php echo base_url();?>application/helpers/icons/inicio/tree/foto1.png" alt="">
-                   </div>
-                   <div class="col x19">
-                     <span>¿Cómo sobrevivir a mi cachorro?</span><br>
-                     <span>248464684 miembros</span>
-                   </div>
-                   <div class="col x13">
-                     <button type="submit" name="button"></button>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="row bord_green white">
-             <div class="col xl12">
-               <div class="row">
-                 <div class="col xl12">
-                   <span>Personas que quizás conoscas</span>
-                 </div>
-               </div>
-               <div class="row center_row">
-                 <div class="col x12">
-                   <img src="<?php echo base_url();?>application/helpers/icons/inicio/tree/perfil.png" alt="">
-                 </div>
-                 <div class="col x16">
-                   <span>Tania Alvarado</span><br>
-                   <button type="submit" name="button"></button>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-
-     </div>
-
-    <footer class="page-footer black">
-        <div class="row">
-          <div class="col xl9 offset-xl1" style="padding-top:10px;">
-            <h5 class="white-text">Español - Inglés - Frances - Portugués</h5>
-          </div>
-          <div class="col xl2">
-            <img src="<?php echo base_url(); ?>application/helpers/icons/radicallogoicon.png" alt="">
-          </div>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-white navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index-2.html"><b>DayDay</b></a>
         </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © Radical Solutions
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="actives"><a href="profile.html">Profile</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                Pages <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="profile2.html">Profile 2</a></li>
+                <li><a href="profile3.html">Profile 3</a></li>
+                <li><a href="profile4.html">Profile 4</a></li>
+                <li><a href="sidebar_profile.html">Sidebar profile</a></li>
+                <li><a href="user_detail.html">User detail</a></li>
+                <li><a href="edit_profile.html">Edit profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="friends2.html">Friends 2</a></li>
+                <li><a href="profile_wall.html">Profile wall</a></li>
+                <li><a href="photos1.html">Photos 1</a></li>
+                <li><a href="photos2.html">Photos 2</a></li>
+                <li><a href="view_photo.html">View photo</a></li>
+                <li><a href="messages1.html">Messages 1</a></li>
+                <li><a href="messages2.html">Messages 2</a></li>
+                <li><a href="group.html">Group</a></li>
+                <li><a href="list_users.html">List users</a></li>
+                <li><a href="file_manager.html">File manager</a></li>
+                <li><a href="people_directory.html">People directory</a></li>
+                <li><a href="list_posts.html">List posts</a></li>
+                <li><a href="grid_posts.html">Grid posts</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="error404.html">Error 404</a></li>
+                <li><a href="error500.html">Error 500</a></li>
+                <li><a href="recover_password.html">Recover password</a></li>
+                <li><a href="registration_mail.html">Registration mail</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </nav>
 
-    <script src="<?php echo base_url(); ?>application/helpers/js/jquery-1.11.1.js" charset="utf-8"></script>
-    <script src="<?php echo base_url(); ?>application/helpers/js/materialize.js" charset="utf-8"></script>
-    <script src="<?php echo base_url(); ?>application/helpers/js/init.js" charset="utf-8"></script>
+    <!-- Begin page content -->
+    <div class="container page-content ">
+      <div class="row">
+        <!-- left links -->
+        <div class="col-md-3">
+          <div class="profile-nav">
+            <div class="widget">
+              <div class="widget-body">
+                <div class="user-heading round">
+                  <a href="#">
+                      <img src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="">
+                  </a>
+                  <h1>John Breakgrow</h1>
+                  <p>@username</p>
+                </div>
+
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="#"> <i class="fa fa-user"></i> News feed</a></li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-envelope"></i> Messages
+                      <span class="label label-info pull-right r-activity">9</span>
+                    </a>
+                  </li>
+                  <li><a href="#"> <i class="fa fa-calendar"></i> Events</a></li>
+                  <li><a href="#"> <i class="fa fa-image"></i> Photos</a></li>
+                  <li><a href="#"> <i class="fa fa-share"></i> Browse</a></li>
+                  <li><a href="#"> <i class="fa fa-floppy-o"></i> Saved</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget">
+              <div class="widget-body">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#"> <i class="fa fa-globe"></i> Pages</a></li>
+                  <li><a href="#"> <i class="fa fa-gamepad"></i> Games</a></li>
+                  <li><a href="#"> <i class="fa fa-puzzle-piece"></i> Ads</a></li>
+                  <li><a href="#"> <i class="fa fa-home"></i> Markerplace</a></li>
+                  <li><a href="#"> <i class="fa fa-users"></i> Groups</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- end left links -->
+
+
+        <!-- center posts -->
+        <div class="col-md-6">
+          <div class="row">
+            <!-- left posts-->
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12">
+                <!-- post state form -->
+                  <div class="box profile-info n-border-top">
+                    <form>
+                        <textarea class="form-control input-lg p-text-area" rows="2" placeholder="Whats in your mind today?"></textarea>
+                    </form>
+                    <div class="box-footer box-form">
+                        <button type="button" class="btn btn-azure pull-right">Post</button>
+                        <ul class="nav nav-pills">
+                            <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+                            <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                            <li><a href="#"><i class=" fa fa-film"></i></a></li>
+                            <li><a href="#"><i class="fa fa-microphone"></i></a></li>
+                        </ul>
+                    </div>
+                  </div><!-- end post state form -->
+
+                  <!--   posts -->
+                  <div class="box box-widget">
+                    <div class="box-header with-border">
+                      <div class="user-block">
+                        <img class="img-circle" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <span class="username"><a href="#">John Breakgrow jr.</a></span>
+                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                      </div>
+                    </div>
+
+                    <div class="box-body" style="display: block;">
+                      <img class="img-responsive show-in-modal" src="<?php echo base_url(); ?>application/helpers/img/Post/young-couple-in-love.jpg" alt="Photo">
+                      <p>I took this photo this morning. What do you guys think?</p>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+                      <span class="pull-right text-muted">127 likes - 3 comments</span>
+                    </div>
+                    <div class="box-footer box-comments" style="display: block;">
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-2.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Maria Gonzales
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Luna Stark
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-footer" style="display: block;">
+                      <form action="#" method="post">
+                        <img class="img-responsive img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="Alt Text">
+                        <div class="img-push">
+                          <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                        </div>
+                      </form>
+                    </div>
+                  </div><!--  end posts-->
+
+
+                  <!-- post -->
+                  <div class="box box-widget">
+                    <div class="box-header with-border">
+                      <div class="user-block">
+                        <img class="img-circle" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                      </div>
+                      <div class="box-tools">
+                      <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read">
+                        <i class="fa fa-circle-o"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                      </div>
+                    </div>
+                    <div class="box-body">
+                      <p>Far far away, behind the word mountains, far from the
+                      countries Vokalia and Consonantia, there live the blind
+                      texts. Separated they live in Bookmarksgrove right at</p>
+
+                      <p>the coast of the Semantics, a large language ocean.
+                      A small river named Duden flows by their place and supplies
+                      it with the necessary regelialia. It is a paradisematic
+                      country, in which roasted parts of sentences fly into
+                      your mouth.</p>
+
+                      <div class="attachment-block clearfix">
+                        <img class="attachment-img" src="<?php echo base_url(); ?>application/helpers/img/Photos/2.jpg" alt="Attachment Image">
+                        <div class="attachment-pushed">
+                        <h4 class="attachment-heading"><a href="http://www.bootdey.com/">Lorem ipsum text generator</a></h4>
+                        <div class="attachment-text">
+                        Description about the attachment can be placed here.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="#">more</a>
+                        </div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+                      <span class="pull-right text-muted">45 likes - 2 comments</span>
+                    </div>
+                    <div class="box-footer box-comments">
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-5.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Maria Gonzales
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-6.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Nora Havisham
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          The point of using Lorem Ipsum is that it has a more-or-less
+                          normal distribution of letters, as opposed to using
+                          'Content here, content here', making it look like readable English.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-footer">
+                      <form action="#" method="post">
+                        <img class="img-responsive img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="Alt Text">
+                        <div class="img-push">
+                          <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                        </div>
+                      </form>
+                    </div>
+                  </div><!-- end post -->
+
+                  <!--  posts -->
+                  <div class="box box-widget">
+                    <div class="box-header with-border">
+                      <div class="user-block">
+                        <img class="img-circle" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <span class="username"><a href="#">John Breakgrow jr.</a></span>
+                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                      </div>
+                    </div>
+
+                    <div class="box-body" style="display: block;">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac iaculis ligula, eget efficitur nisi. In vel rutrum orci. Etiam ut orci volutpat, maximus quam vel, euismod orci. Nunc in urna non lectus malesuada aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam dignissim mi ac metus consequat, a pharetra neque molestie. Maecenas condimentum lorem quis vulputate volutpat. Etiam sapien diam
+                      </p>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+                      <span class="pull-right text-muted">127 likes - 3 comments</span>
+                    </div>
+                    <div class="box-footer box-comments" style="display: block;">
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-2.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Maria Gonzales
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Luna Stark
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-footer" style="display: block;">
+                      <form action="#" method="post">
+                        <img class="img-responsive img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="Alt Text">
+                        <div class="img-push">
+                          <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                        </div>
+                      </form>
+                    </div>
+                  </div><!--  end posts -->
+
+                  <!--   posts -->
+                  <div class="box box-widget">
+                    <div class="box-header with-border">
+                      <div class="user-block">
+                        <img class="img-circle" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <span class="username"><a href="#">John Breakgrow jr.</a></span>
+                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                      </div>
+                    </div>
+
+                    <div class="box-body" style="display: block;">
+                      <img class="img-responsive pad" src="<?php echo base_url(); ?>application/helpers/img/Photos/3.jpg" alt="Photo">
+                      <p>I took this photo this morning. What do you guys think?</p>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share</button>
+                      <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
+                      <span class="pull-right text-muted">127 likes - 3 comments</span>
+                    </div>
+                    <div class="box-footer box-comments" style="display: block;">
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-2.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Maria Gonzales
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+
+                      <div class="box-comment">
+                        <img class="img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="User Image">
+                        <div class="comment-text">
+                          <span class="username">
+                          Luna Stark
+                          <span class="text-muted pull-right">8:03 PM Today</span>
+                          </span>
+                          It is a long established fact that a reader will be distracted
+                          by the readable content of a page when looking at its layout.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-footer" style="display: block;">
+                      <form action="#" method="post">
+                        <img class="img-responsive img-circle img-sm" src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-3.jpg" alt="Alt Text">
+                        <div class="img-push">
+                          <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                        </div>
+                      </form>
+                    </div>
+                  </div><!--  end posts -->
+                </div>
+              </div>
+            </div><!-- end left posts-->
+          </div>
+        </div><!-- end  center posts -->
+
+
+
+
+        <!-- right posts -->
+        <div class="col-md-3">
+          <!-- Friends activity -->
+          <div class="widget">
+            <div class="widget-header">
+              <h3 class="widget-caption">Friends activity</h3>
+            </div>
+            <div class="widget-body bordered-top bordered-sky">
+              <div class="card">
+                <div class="content">
+                   <ul class="list-unstyled team-members">
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <div class="avatar">
+                              <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-2.jpg" alt="img" class="img-circle img-no-padding img-responsive">
+                          </div>
+                        </div>
+                        <div class="col-xs-9">
+                          <b><a href="#">Hillary Markston</a></b> shared a
+                          <b><a href="#">publication</a></b>.
+                          <span class="timeago" >5 min ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <div class="avatar">
+                              <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          </div>
+                        </div>
+                        <div class="col-xs-9">
+                          <b><a href="#">Leidy marshel</a></b> shared a
+                          <b><a href="#">publication</a></b>.
+                          <span class="timeago" >5 min ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <div class="avatar">
+                              <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-4.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                          </div>
+                        </div>
+                        <div class="col-xs-9">
+                          <b><a href="#">Presilla bo</a></b> shared a
+                          <b><a href="#">publication</a></b>.
+                          <span class="timeago" >5 min ago</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-3">
+                            <div class="avatar">
+                                <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-4.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                          <b><a href="#">Martha markguy</a></b> shared a
+                          <b><a href="#">publication</a></b>.
+                          <span class="timeago" >5 min ago</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Friends activity -->
+
+          <!-- People You May Know -->
+          <div class="widget">
+            <div class="widget-header">
+              <h3 class="widget-caption">People You May Know</h3>
+            </div>
+            <div class="widget-body bordered-top bordered-sky">
+              <div class="card">
+                  <div class="content">
+                      <ul class="list-unstyled team-members">
+                          <li>
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <div class="avatar">
+                                          <img src="<?php echo base_url(); ?>application/helpers/img/Friends/guy-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-6">
+                                     Carlos marthur
+                                  </div>
+
+                                  <div class="col-xs-3 text-right">
+                                      <btn class="btn btn-sm btn-azure btn-icon"><i class="fa fa-user-plus"></i></btn>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <div class="avatar">
+                                          <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-6">
+                                      Maria gustami
+                                  </div>
+
+                                  <div class="col-xs-3 text-right">
+                                      <btn class="btn btn-sm btn-azure btn-icon"><i class="fa fa-user-plus"></i></btn>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <div class="avatar">
+                                          <img src="<?php echo base_url(); ?>application/helpers/img/Friends/woman-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-6">
+                                      Angellina mcblown
+                                  </div>
+
+                                  <div class="col-xs-3 text-right">
+                                      <btn class="btn btn-sm btn-azure btn-icon"><i class="fa fa-user-plus"></i></btn>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+          </div><!-- End people yout may know -->
+        </div><!-- end right posts -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"> Copyright &copy; Company - All rights reserved </p>
+      </div>
+    </footer>
+      <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-49755460-1', 'auto', {'allowLinker': true});
+          ga('require', 'linker');
+          ga('linker:autoLink', ['bootdey.com','www.bootdey.com','demos.bootdey.com'] );
+          ga('send', 'pageview');
+      </script>
   </body>
+
+<!-- Mirrored from demos.bootdey.com/dayday/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Aug 2017 15:44:05 GMT -->
 </html>

@@ -18,7 +18,7 @@
           <div class="card row_0 vspace_0">
               <div class="card-image">
                 <img src="<?php echo base_url()?>application/helpers/images/profile/portada.png">
-                <span class="card-title">Ryan Sheckler</span>
+                <span class="card-title"><?php echo $usuario["nombre"]; ?></span>
                 <span class="card-title right">
                   <img class="palote_space" src="<?php echo base_url()?>application/helpers/icons/profile/puntos.png" alt="">
                   <img class="palote_space" src="<?php echo base_url()?>application/helpers/icons/profile/editar.png" alt="">
@@ -49,36 +49,29 @@
       <div class="row">
         <div class="col xl5">
           <div class="row bord_green white">
-            <div class="col xl10">
+            <div class="col xl12">
               <div class="row row_0">
-                <div class="col xl2">
-
-                </div>
-                <div class="col xl10">
-                  24741BG254G
-                </div>
-              </div>
-              <div class="row row_0">
-                <div class="col xl2">
-
-                </div>
-                <div class="col xl10">
-                  22 de setiembre 2014
-                </div>
-              </div>
-              <div class="row row_0">
-                <div class="col xl12">
-                  // Mixto ///
-                </div>
-              </div>
-              <div class="row row_0">
-                <div class="col xl12">
-                  // Macho ///
-                </div>
-              </div>
-              <div class="row row_0">
-                <div class="col xl12">
-                  // Caramelo y Negro ///
+                <div class="left-align col xl10 push-xl1 pull-xl1">
+                  <div class="row row_0">
+                    <div class="col xl12">
+                      65454EdSF684
+                    </div>
+                  </div>
+                  <div class="row row_0">
+                    <div class="col xl12">
+                      <?php echo $this->Catalogo_model->obtener_fecha_texto($usuario['fecha_nac']);?>
+                    </div>
+                  </div>
+                  <div class="row row_0">
+                    <div class="col xl12">
+                      <?php echo $usuario['raza'];?>
+                    </div>
+                  </div>         
+                  <div class="row row_0">
+                    <div class="col xl12">
+                      <?php echo "// ".($usuario['sexo']="M") ? "Macho" : "Hembra" ." //";?>
+                    </div>
+                  </div>        
                 </div>
               </div>
             </div>
@@ -170,7 +163,7 @@
               <div class="row">
                 <div class="col xl12 left-align">
                   <img src="<?php echo base_url();?>application/helpers/icons/inicio/second/perfil.png" alt="">
-                  <span>Ryan Sheckler Skate</span>
+                  <span><?php echo $usuario["nombre"]; ?></span>
                 </div>
               </div>
               <div class="row">
@@ -194,7 +187,7 @@
               </div>
               <div class="row">
                 <div class="col xl12">
-                  <span style="font-weight:bold">Ryan</span><span> Sheckler Skate</span>
+                  <span style="font-weight:bold"><?php echo $usuario["nombre"]; ?></span>
                   <span> Acaba de comer una galleta</span><br>
                   <span>#galletas</span><span>#galletas</span><span>#galletas</span>
                 </div>
@@ -210,10 +203,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   <script src="<?php echo base_url(); ?>application/helpers/js/jquery-1.11.1.js" charset="utf-8"></script>
   <script src="<?php echo base_url(); ?>application/helpers/js/materialize.js" charset="utf-8"></script>
   <script src="<?php echo base_url(); ?>application/helpers/js/init.js" charset="utf-8"></script>

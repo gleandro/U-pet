@@ -3,11 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Profile extends CI_Controller{
 
-  function index()
-  {
-    //$nombre = $this->input->get('name');
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model(array('Usuario_Model','Catalogo_model'));
+	}
 
-    $this->load->view('Profile/index');
-  }
+  	function index()
+  	{
+		if (!$this->Catalogo_model->session_existe()){
+			$this->load->view('Home/login');
+		}else{
+			$data['usuario'] = $_SESSION['SES_usuario'][0];
+			//print_r($data);
+			$this->load->view('Profile/index',$data);
+		}
+	}
 
 }
